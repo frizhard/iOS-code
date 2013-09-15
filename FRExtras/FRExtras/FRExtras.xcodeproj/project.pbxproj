@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A703C99A17E60A5E0089678F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A703C99917E60A5E0089678F /* Foundation.framework */; };
+		A703C99F17E60A5E0089678F /* FRExtras.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A703C99E17E60A5E0089678F /* FRExtras.h */; };
+		A703C9A117E60A5E0089678F /* FRExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = A703C9A017E60A5E0089678F /* FRExtras.m */; };
+		A703C9A817E60A5E0089678F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A703C9A717E60A5E0089678F /* XCTest.framework */; };
+		A703C9A917E60A5E0089678F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A703C99917E60A5E0089678F /* Foundation.framework */; };
+		A703C9AB17E60A5E0089678F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A703C9AA17E60A5E0089678F /* UIKit.framework */; };
+		A703C9AE17E60A5E0089678F /* libFRExtras.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A703C99617E60A5E0089678F /* libFRExtras.a */; };
+		A703C9B417E60A5E0089678F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A703C9B217E60A5E0089678F /* InfoPlist.strings */; };
+		A703C9B617E60A5E0089678F /* FRExtrasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A703C9B517E60A5E0089678F /* FRExtrasTests.m */; };
+		A703C9C417E60BDF0089678F /* FRImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A703C9C317E60BDF0089678F /* FRImageLoader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A703C9AC17E60A5E0089678F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A703C98E17E60A5E0089678F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A703C99517E60A5E0089678F;
+			remoteInfo = FRExtras;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A703C99417E60A5E0089678F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A703C99F17E60A5E0089678F /* FRExtras.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A703C99617E60A5E0089678F /* libFRExtras.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFRExtras.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A703C99917E60A5E0089678F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A703C99D17E60A5E0089678F /* FRExtras-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRExtras-Prefix.pch"; sourceTree = "<group>"; };
+		A703C99E17E60A5E0089678F /* FRExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRExtras.h; sourceTree = "<group>"; };
+		A703C9A017E60A5E0089678F /* FRExtras.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRExtras.m; sourceTree = "<group>"; };
+		A703C9A617E60A5E0089678F /* FRExtrasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRExtrasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A703C9A717E60A5E0089678F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A703C9AA17E60A5E0089678F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A703C9B117E60A5E0089678F /* FRExtrasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRExtrasTests-Info.plist"; sourceTree = "<group>"; };
+		A703C9B317E60A5E0089678F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A703C9B517E60A5E0089678F /* FRExtrasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRExtrasTests.m; sourceTree = "<group>"; };
+		A703C9C017E60BDF0089678F /* FRArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRArc.h; path = ../FRArc/FRArc.h; sourceTree = "<group>"; };
+		A703C9C217E60BDF0089678F /* FRImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRImageLoader.h; sourceTree = "<group>"; };
+		A703C9C317E60BDF0089678F /* FRImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRImageLoader.m; sourceTree = "<group>"; };
+		A703C9C617E60D770089678F /* FRError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FRError.h; path = FRError/FRError.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A703C99317E60A5E0089678F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A703C99A17E60A5E0089678F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A703C9A317E60A5E0089678F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A703C9A817E60A5E0089678F /* XCTest.framework in Frameworks */,
+				A703C9AB17E60A5E0089678F /* UIKit.framework in Frameworks */,
+				A703C9AE17E60A5E0089678F /* libFRExtras.a in Frameworks */,
+				A703C9A917E60A5E0089678F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A703C98D17E60A5E0089678F = {
+			isa = PBXGroup;
+			children = (
+				A703C99B17E60A5E0089678F /* FRExtras */,
+				A703C9AF17E60A5E0089678F /* FRExtrasTests */,
+				A703C99817E60A5E0089678F /* Frameworks */,
+				A703C99717E60A5E0089678F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A703C99717E60A5E0089678F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A703C99617E60A5E0089678F /* libFRExtras.a */,
+				A703C9A617E60A5E0089678F /* FRExtrasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A703C99817E60A5E0089678F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A703C99917E60A5E0089678F /* Foundation.framework */,
+				A703C9A717E60A5E0089678F /* XCTest.framework */,
+				A703C9AA17E60A5E0089678F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A703C99B17E60A5E0089678F /* FRExtras */ = {
+			isa = PBXGroup;
+			children = (
+				A703C99E17E60A5E0089678F /* FRExtras.h */,
+				A703C9A017E60A5E0089678F /* FRExtras.m */,
+				A703C9BF17E60BDF0089678F /* FRArc */,
+				A703C9C517E60D4D0089678F /* FRError */,
+				A703C9C117E60BDF0089678F /* FRImageLoader */,
+				A703C99C17E60A5E0089678F /* Supporting Files */,
+			);
+			path = FRExtras;
+			sourceTree = "<group>";
+		};
+		A703C99C17E60A5E0089678F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A703C99D17E60A5E0089678F /* FRExtras-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A703C9AF17E60A5E0089678F /* FRExtrasTests */ = {
+			isa = PBXGroup;
+			children = (
+				A703C9B517E60A5E0089678F /* FRExtrasTests.m */,
+				A703C9B017E60A5E0089678F /* Supporting Files */,
+			);
+			path = FRExtrasTests;
+			sourceTree = "<group>";
+		};
+		A703C9B017E60A5E0089678F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A703C9B117E60A5E0089678F /* FRExtrasTests-Info.plist */,
+				A703C9B217E60A5E0089678F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A703C9BF17E60BDF0089678F /* FRArc */ = {
+			isa = PBXGroup;
+			children = (
+				A703C9C017E60BDF0089678F /* FRArc.h */,
+			);
+			name = FRArc;
+			path = FRArcConditional;
+			sourceTree = "<group>";
+		};
+		A703C9C117E60BDF0089678F /* FRImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A703C9C217E60BDF0089678F /* FRImageLoader.h */,
+				A703C9C317E60BDF0089678F /* FRImageLoader.m */,
+			);
+			path = FRImageLoader;
+			sourceTree = "<group>";
+		};
+		A703C9C517E60D4D0089678F /* FRError */ = {
+			isa = PBXGroup;
+			children = (
+				A703C9C617E60D770089678F /* FRError.h */,
+			);
+			name = FRError;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A703C99517E60A5E0089678F /* FRExtras */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A703C9B917E60A5E0089678F /* Build configuration list for PBXNativeTarget "FRExtras" */;
+			buildPhases = (
+				A703C99217E60A5E0089678F /* Sources */,
+				A703C99317E60A5E0089678F /* Frameworks */,
+				A703C99417E60A5E0089678F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRExtras;
+			productName = FRExtras;
+			productReference = A703C99617E60A5E0089678F /* libFRExtras.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A703C9A517E60A5E0089678F /* FRExtrasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A703C9BC17E60A5E0089678F /* Build configuration list for PBXNativeTarget "FRExtrasTests" */;
+			buildPhases = (
+				A703C9A217E60A5E0089678F /* Sources */,
+				A703C9A317E60A5E0089678F /* Frameworks */,
+				A703C9A417E60A5E0089678F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A703C9AD17E60A5E0089678F /* PBXTargetDependency */,
+			);
+			name = FRExtrasTests;
+			productName = FRExtrasTests;
+			productReference = A703C9A617E60A5E0089678F /* FRExtrasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A703C98E17E60A5E0089678F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Frizhard;
+			};
+			buildConfigurationList = A703C99117E60A5E0089678F /* Build configuration list for PBXProject "FRExtras" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A703C98D17E60A5E0089678F;
+			productRefGroup = A703C99717E60A5E0089678F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A703C99517E60A5E0089678F /* FRExtras */,
+				A703C9A517E60A5E0089678F /* FRExtrasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A703C9A417E60A5E0089678F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A703C9B417E60A5E0089678F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A703C99217E60A5E0089678F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A703C9C417E60BDF0089678F /* FRImageLoader.m in Sources */,
+				A703C9A117E60A5E0089678F /* FRExtras.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A703C9A217E60A5E0089678F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A703C9B617E60A5E0089678F /* FRExtrasTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A703C9AD17E60A5E0089678F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A703C99517E60A5E0089678F /* FRExtras */;
+			targetProxy = A703C9AC17E60A5E0089678F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A703C9B217E60A5E0089678F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A703C9B317E60A5E0089678F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A703C9B717E60A5E0089678F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A703C9B817E60A5E0089678F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A703C9BA17E60A5E0089678F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FRExtras.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRExtras/FRExtras-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A703C9BB17E60A5E0089678F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FRExtras.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRExtras/FRExtras-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A703C9BD17E60A5E0089678F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRExtras/FRExtras-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FRExtrasTests/FRExtrasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A703C9BE17E60A5E0089678F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRExtras/FRExtras-Prefix.pch";
+				INFOPLIST_FILE = "FRExtrasTests/FRExtrasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A703C99117E60A5E0089678F /* Build configuration list for PBXProject "FRExtras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A703C9B717E60A5E0089678F /* Debug */,
+				A703C9B817E60A5E0089678F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A703C9B917E60A5E0089678F /* Build configuration list for PBXNativeTarget "FRExtras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A703C9BA17E60A5E0089678F /* Debug */,
+				A703C9BB17E60A5E0089678F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A703C9BC17E60A5E0089678F /* Build configuration list for PBXNativeTarget "FRExtrasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A703C9BD17E60A5E0089678F /* Debug */,
+				A703C9BE17E60A5E0089678F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A703C98E17E60A5E0089678F /* Project object */;
+}

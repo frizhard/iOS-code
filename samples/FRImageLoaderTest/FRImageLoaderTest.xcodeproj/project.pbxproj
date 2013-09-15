@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A75FB8D517E615ED005F6DC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75FB8D417E615ED005F6DC1 /* Foundation.framework */; };
+		A75FB8D717E615ED005F6DC1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75FB8D617E615ED005F6DC1 /* CoreGraphics.framework */; };
+		A75FB8D917E615ED005F6DC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75FB8D817E615ED005F6DC1 /* UIKit.framework */; };
+		A75FB8DF17E615ED005F6DC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A75FB8DD17E615ED005F6DC1 /* InfoPlist.strings */; };
+		A75FB8E117E615ED005F6DC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A75FB8E017E615ED005F6DC1 /* main.m */; };
+		A75FB8E517E615ED005F6DC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A75FB8E417E615ED005F6DC1 /* AppDelegate.m */; };
+		A75FB8E717E615ED005F6DC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75FB8E617E615ED005F6DC1 /* Images.xcassets */; };
+		A75FB8EE17E615EE005F6DC1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75FB8ED17E615EE005F6DC1 /* XCTest.framework */; };
+		A75FB8EF17E615EE005F6DC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75FB8D417E615ED005F6DC1 /* Foundation.framework */; };
+		A75FB8F017E615EE005F6DC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75FB8D817E615ED005F6DC1 /* UIKit.framework */; };
+		A75FB8F817E615EE005F6DC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A75FB8F617E615EE005F6DC1 /* InfoPlist.strings */; };
+		A75FB8FA17E615EE005F6DC1 /* FRImageLoaderTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A75FB8F917E615EE005F6DC1 /* FRImageLoaderTestTests.m */; };
+		A75FB90E17E61630005F6DC1 /* libFRExtras.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A75FB90917E6160E005F6DC1 /* libFRExtras.a */; };
+		A75FB91217E616DA005F6DC1 /* ImageLoaderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A75FB91117E616DA005F6DC1 /* ImageLoaderController.xib */; };
+		A75FB91617E6192A005F6DC1 /* FRImageLoaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = A75FB91517E6192A005F6DC1 /* FRImageLoaderController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A75FB8F117E615EE005F6DC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A75FB8C917E615ED005F6DC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A75FB8D017E615ED005F6DC1;
+			remoteInfo = FRImageLoaderTest;
+		};
+		A75FB90817E6160E005F6DC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A75FB90317E6160E005F6DC1 /* FRExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A703C99617E60A5E0089678F;
+			remoteInfo = FRExtras;
+		};
+		A75FB90A17E6160E005F6DC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A75FB90317E6160E005F6DC1 /* FRExtras.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A703C9A617E60A5E0089678F;
+			remoteInfo = FRExtrasTests;
+		};
+		A75FB90C17E61629005F6DC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A75FB90317E6160E005F6DC1 /* FRExtras.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A703C99517E60A5E0089678F;
+			remoteInfo = FRExtras;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A75FB8D117E615ED005F6DC1 /* FRImageLoaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRImageLoaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75FB8D417E615ED005F6DC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A75FB8D617E615ED005F6DC1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A75FB8D817E615ED005F6DC1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A75FB8DC17E615ED005F6DC1 /* FRImageLoaderTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRImageLoaderTest-Info.plist"; sourceTree = "<group>"; };
+		A75FB8DE17E615ED005F6DC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A75FB8E017E615ED005F6DC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A75FB8E217E615ED005F6DC1 /* FRImageLoaderTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRImageLoaderTest-Prefix.pch"; sourceTree = "<group>"; };
+		A75FB8E317E615ED005F6DC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A75FB8E417E615ED005F6DC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A75FB8E617E615ED005F6DC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A75FB8EC17E615EE005F6DC1 /* FRImageLoaderTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRImageLoaderTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75FB8ED17E615EE005F6DC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A75FB8F517E615EE005F6DC1 /* FRImageLoaderTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRImageLoaderTestTests-Info.plist"; sourceTree = "<group>"; };
+		A75FB8F717E615EE005F6DC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A75FB8F917E615EE005F6DC1 /* FRImageLoaderTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRImageLoaderTestTests.m; sourceTree = "<group>"; };
+		A75FB90317E6160E005F6DC1 /* FRExtras.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FRExtras.xcodeproj; path = ../../../FRExtras/FRExtras/FRExtras.xcodeproj; sourceTree = "<group>"; };
+		A75FB91117E616DA005F6DC1 /* ImageLoaderController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageLoaderController.xib; path = NIB/ImageLoaderController.xib; sourceTree = "<group>"; };
+		A75FB91417E6192A005F6DC1 /* FRImageLoaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRImageLoaderController.h; path = Classes/FRImageLoaderController.h; sourceTree = "<group>"; };
+		A75FB91517E6192A005F6DC1 /* FRImageLoaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRImageLoaderController.m; path = Classes/FRImageLoaderController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A75FB8CE17E615ED005F6DC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75FB90E17E61630005F6DC1 /* libFRExtras.a in Frameworks */,
+				A75FB8D717E615ED005F6DC1 /* CoreGraphics.framework in Frameworks */,
+				A75FB8D917E615ED005F6DC1 /* UIKit.framework in Frameworks */,
+				A75FB8D517E615ED005F6DC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75FB8E917E615EE005F6DC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75FB8EE17E615EE005F6DC1 /* XCTest.framework in Frameworks */,
+				A75FB8F017E615EE005F6DC1 /* UIKit.framework in Frameworks */,
+				A75FB8EF17E615EE005F6DC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A75FB8C817E615ED005F6DC1 = {
+			isa = PBXGroup;
+			children = (
+				A75FB8DA17E615ED005F6DC1 /* FRImageLoaderTest */,
+				A75FB8F317E615EE005F6DC1 /* FRImageLoaderTestTests */,
+				A75FB8D317E615ED005F6DC1 /* Frameworks */,
+				A75FB8D217E615ED005F6DC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A75FB8D217E615ED005F6DC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB8D117E615ED005F6DC1 /* FRImageLoaderTest.app */,
+				A75FB8EC17E615EE005F6DC1 /* FRImageLoaderTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A75FB8D317E615ED005F6DC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB8D417E615ED005F6DC1 /* Foundation.framework */,
+				A75FB8D617E615ED005F6DC1 /* CoreGraphics.framework */,
+				A75FB8D817E615ED005F6DC1 /* UIKit.framework */,
+				A75FB8ED17E615EE005F6DC1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A75FB8DA17E615ED005F6DC1 /* FRImageLoaderTest */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB90F17E6165A005F6DC1 /* dependencies */,
+				A75FB91317E618F8005F6DC1 /* Classes */,
+				A75FB8E317E615ED005F6DC1 /* AppDelegate.h */,
+				A75FB8E417E615ED005F6DC1 /* AppDelegate.m */,
+				A75FB8E617E615ED005F6DC1 /* Images.xcassets */,
+				A75FB8DB17E615ED005F6DC1 /* Supporting Files */,
+			);
+			path = FRImageLoaderTest;
+			sourceTree = "<group>";
+		};
+		A75FB8DB17E615ED005F6DC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB91017E61674005F6DC1 /* NIB */,
+				A75FB8DC17E615ED005F6DC1 /* FRImageLoaderTest-Info.plist */,
+				A75FB8DD17E615ED005F6DC1 /* InfoPlist.strings */,
+				A75FB8E017E615ED005F6DC1 /* main.m */,
+				A75FB8E217E615ED005F6DC1 /* FRImageLoaderTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A75FB8F317E615EE005F6DC1 /* FRImageLoaderTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB8F917E615EE005F6DC1 /* FRImageLoaderTestTests.m */,
+				A75FB8F417E615EE005F6DC1 /* Supporting Files */,
+			);
+			path = FRImageLoaderTestTests;
+			sourceTree = "<group>";
+		};
+		A75FB8F417E615EE005F6DC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB8F517E615EE005F6DC1 /* FRImageLoaderTestTests-Info.plist */,
+				A75FB8F617E615EE005F6DC1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A75FB90417E6160E005F6DC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB90917E6160E005F6DC1 /* libFRExtras.a */,
+				A75FB90B17E6160E005F6DC1 /* FRExtrasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A75FB90F17E6165A005F6DC1 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB90317E6160E005F6DC1 /* FRExtras.xcodeproj */,
+			);
+			name = dependencies;
+			sourceTree = "<group>";
+		};
+		A75FB91017E61674005F6DC1 /* NIB */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB91117E616DA005F6DC1 /* ImageLoaderController.xib */,
+			);
+			name = NIB;
+			sourceTree = "<group>";
+		};
+		A75FB91317E618F8005F6DC1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A75FB91417E6192A005F6DC1 /* FRImageLoaderController.h */,
+				A75FB91517E6192A005F6DC1 /* FRImageLoaderController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A75FB8D017E615ED005F6DC1 /* FRImageLoaderTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A75FB8FD17E615EE005F6DC1 /* Build configuration list for PBXNativeTarget "FRImageLoaderTest" */;
+			buildPhases = (
+				A75FB8CD17E615ED005F6DC1 /* Sources */,
+				A75FB8CE17E615ED005F6DC1 /* Frameworks */,
+				A75FB8CF17E615ED005F6DC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A75FB90D17E61629005F6DC1 /* PBXTargetDependency */,
+			);
+			name = FRImageLoaderTest;
+			productName = FRImageLoaderTest;
+			productReference = A75FB8D117E615ED005F6DC1 /* FRImageLoaderTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A75FB8EB17E615EE005F6DC1 /* FRImageLoaderTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A75FB90017E615EE005F6DC1 /* Build configuration list for PBXNativeTarget "FRImageLoaderTestTests" */;
+			buildPhases = (
+				A75FB8E817E615EE005F6DC1 /* Sources */,
+				A75FB8E917E615EE005F6DC1 /* Frameworks */,
+				A75FB8EA17E615EE005F6DC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A75FB8F217E615EE005F6DC1 /* PBXTargetDependency */,
+			);
+			name = FRImageLoaderTestTests;
+			productName = FRImageLoaderTestTests;
+			productReference = A75FB8EC17E615EE005F6DC1 /* FRImageLoaderTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A75FB8C917E615ED005F6DC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Frizhard;
+				TargetAttributes = {
+					A75FB8EB17E615EE005F6DC1 = {
+						TestTargetID = A75FB8D017E615ED005F6DC1;
+					};
+				};
+			};
+			buildConfigurationList = A75FB8CC17E615ED005F6DC1 /* Build configuration list for PBXProject "FRImageLoaderTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A75FB8C817E615ED005F6DC1;
+			productRefGroup = A75FB8D217E615ED005F6DC1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A75FB90417E6160E005F6DC1 /* Products */;
+					ProjectRef = A75FB90317E6160E005F6DC1 /* FRExtras.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A75FB8D017E615ED005F6DC1 /* FRImageLoaderTest */,
+				A75FB8EB17E615EE005F6DC1 /* FRImageLoaderTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A75FB90917E6160E005F6DC1 /* libFRExtras.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFRExtras.a;
+			remoteRef = A75FB90817E6160E005F6DC1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A75FB90B17E6160E005F6DC1 /* FRExtrasTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FRExtrasTests.xctest;
+			remoteRef = A75FB90A17E6160E005F6DC1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A75FB8CF17E615ED005F6DC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75FB8DF17E615ED005F6DC1 /* InfoPlist.strings in Resources */,
+				A75FB8E717E615ED005F6DC1 /* Images.xcassets in Resources */,
+				A75FB91217E616DA005F6DC1 /* ImageLoaderController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75FB8EA17E615EE005F6DC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75FB8F817E615EE005F6DC1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A75FB8CD17E615ED005F6DC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75FB8E517E615ED005F6DC1 /* AppDelegate.m in Sources */,
+				A75FB91617E6192A005F6DC1 /* FRImageLoaderController.m in Sources */,
+				A75FB8E117E615ED005F6DC1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75FB8E817E615EE005F6DC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75FB8FA17E615EE005F6DC1 /* FRImageLoaderTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A75FB8F217E615EE005F6DC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A75FB8D017E615ED005F6DC1 /* FRImageLoaderTest */;
+			targetProxy = A75FB8F117E615EE005F6DC1 /* PBXContainerItemProxy */;
+		};
+		A75FB90D17E61629005F6DC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FRExtras;
+			targetProxy = A75FB90C17E61629005F6DC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A75FB8DD17E615ED005F6DC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A75FB8DE17E615ED005F6DC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A75FB8F617E615EE005F6DC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A75FB8F717E615EE005F6DC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A75FB8FB17E615EE005F6DC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A75FB8FC17E615EE005F6DC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A75FB8FE17E615EE005F6DC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRImageLoaderTest/FRImageLoaderTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../FRExtras/FRExtras,
+				);
+				INFOPLIST_FILE = "FRImageLoaderTest/FRImageLoaderTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A75FB8FF17E615EE005F6DC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRImageLoaderTest/FRImageLoaderTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode5/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../FRExtras/FRExtras,
+				);
+				INFOPLIST_FILE = "FRImageLoaderTest/FRImageLoaderTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A75FB90117E615EE005F6DC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FRImageLoaderTest.app/FRImageLoaderTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRImageLoaderTest/FRImageLoaderTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FRImageLoaderTestTests/FRImageLoaderTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A75FB90217E615EE005F6DC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FRImageLoaderTest.app/FRImageLoaderTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FRImageLoaderTest/FRImageLoaderTest-Prefix.pch";
+				INFOPLIST_FILE = "FRImageLoaderTestTests/FRImageLoaderTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A75FB8CC17E615ED005F6DC1 /* Build configuration list for PBXProject "FRImageLoaderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75FB8FB17E615EE005F6DC1 /* Debug */,
+				A75FB8FC17E615EE005F6DC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A75FB8FD17E615EE005F6DC1 /* Build configuration list for PBXNativeTarget "FRImageLoaderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75FB8FE17E615EE005F6DC1 /* Debug */,
+				A75FB8FF17E615EE005F6DC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A75FB90017E615EE005F6DC1 /* Build configuration list for PBXNativeTarget "FRImageLoaderTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75FB90117E615EE005F6DC1 /* Debug */,
+				A75FB90217E615EE005F6DC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A75FB8C917E615ED005F6DC1 /* Project object */;
+}

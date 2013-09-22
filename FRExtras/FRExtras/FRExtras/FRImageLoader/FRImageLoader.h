@@ -20,6 +20,6 @@ typedef void(^FRImageLoaderCompletionBlock)(NSURL *, UIImage *, NSError *);
 }
 
 + (FRImageLoader *) sharedInstance;
-+ (void) loadImageFromUrl:(NSURL *)_url completion:(FRImageLoaderCompletionBlock)_completionBlock;
++ (void) loadImageFromUrl:(NSURL *)_url isRetina:(BOOL)_isRetina completion:(FRImageLoaderCompletionBlock)_completionBlock;
 
 @end

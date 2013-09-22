@@ -22,7 +22,7 @@ static FRImageLoader *gSharedInstance = nil;
 
 @interface FRImageLoader(privateMethods)
 
-- (void) loadImageFromUrl:(NSURL *)_url completion:(FRImageLoaderCompletionBlock)_completionBlock;
+- (void) loadImageFromUrl:(NSURL *)_url isRetina:(BOOL)_isRetina completion:(FRImageLoaderCompletionBlock)_completionBlock;
 
 @end
 
@@ -38,11 +38,11 @@ static FRImageLoader *gSharedInstance = nil;
 	return gSharedInstance;
 }
 
-+ (void) loadImageFromUrl:(NSURL *)_url completion:(FRImageLoaderCompletionBlock)_completionBlock
++ (void) loadImageFromUrl:(NSURL *)_url isRetina:(BOOL)_isRetina completion:(FRImageLoaderCompletionBlock)_completionBlock
 {
 	FRImageLoader *loader = [FRImageLoader sharedInstance];
 	
-	[loader loadImageFromUrl:_url completion:_completionBlock];
+	[loader loadImageFromUrl:_url isRetina:(BOOL)_isRetina completion:_completionBlock];
 }
 
 - (id) init
@@ -98,7 +98,7 @@ static FRImageLoader *gSharedInstance = nil;
 
 @implementation FRImageLoader(privateMethods)
 
-- (void) loadImageFromUrl:(NSURL *)_url completion:(FRImageLoaderCompletionBlock)_completionBlock
+- (void) loadImageFromUrl:(NSURL *)_url isRetina:(BOOL)_isRetina completion:(FRImageLoaderCompletionBlock)_completionBlock
 {
 	NSAssert(_url!=nil, @"URL must not be nil");
 	
@@ -131,12 +131,7 @@ static FRImageLoader *gSharedInstance = nil;
 					error = [NSError errorWithDomain:kFrizhardErrorDomain code:kFrizhardErrorFileOrUrlNotFound userInfo:@{ kFrizhardErrorKeyUrl : _url }];
 				else
 				{
-					//NSArray *pathArray = [_url pathComponents];
-					NSString *extension = [_url pathExtension];
-					NSString *path = [_url path];
-					NSString *filePath = [path substringToIndex:[path length]-[extension length]-1];
-					
-					if([filePath hasSuffix:@"@2x"]==NO)
+					if(_isRetina==NO)
 						img = [UIImage imageWithData:data];
 					else
 					{

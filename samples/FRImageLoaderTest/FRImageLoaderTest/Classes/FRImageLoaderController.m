@@ -87,7 +87,7 @@
 		UIActivityIndicatorView *activity = [activityArray objectAtIndex:_tag];
 		[activity startAnimating];
 		
-		[FRImageLoader loadImageFromUrl:[NSURL URLWithString:[urlStringArray objectAtIndex:_tag]] completion:^ (NSURL *_url, UIImage *_image, NSError *_error) {
+		[FRImageLoader loadImageFromUrl:[NSURL URLWithString:[urlStringArray objectAtIndex:_tag]] isRetina:NO completion:^ (NSURL *_url, UIImage *_image, NSError *_error) {
 			[activity stopAnimating];
 			imageView.image = _image;
 		}];
